@@ -1,0 +1,31 @@
+{
+  "name": "weatherprojectbackendapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokuphiwa02/weatherProjectBackendAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nokuphiwa02/weatherProjectBackendAPI/issues"
+  },
+  "homepage": "https://github.com/nokuphiwa02/weatherProjectBackendAPI#readme",
+  "dependencies": {
+    "@types/node": "^22.20.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "tsx": "^4.23.13"
+  }
+}
