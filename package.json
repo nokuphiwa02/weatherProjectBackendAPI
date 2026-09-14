@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "Async": "tsx src/AsyncVersion.ts",
+    "Callback": "tsx src/CallbackVerison.ts",
+    "PromiseVersion": "tsx src/PromiseVersion.ts"
   },
   "repository": {
     "type": "git",
