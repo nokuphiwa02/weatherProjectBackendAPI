@@ -8,7 +8,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "noEmit": true,
-    "types": ["node"]
+    // "types": ["node"]
   },
   "include": ["src"]
 }
