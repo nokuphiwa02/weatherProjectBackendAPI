@@ -1,4 +1,4 @@
-// import https from "https";
+import https from "https";
 
 type WeatherData = {
   current_weather: {
