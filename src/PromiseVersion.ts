@@ -79,3 +79,15 @@ fetchWeather()
   .catch((error) => {
     console.error("Error:", error.message);
   });
+
+// promise.all
+   console.log("promise all");
+   Promise.all([fetchWeather(), fetchNews()])
+  .then(([weather, news]) => {
+    displayWeather(weather);
+    displayNews(news);
+    console.log("\nBoth loaded at the same time");
+  })
+  .catch((error) => {
+    console.error("Error:", error.message);
+  });
