@@ -18,9 +18,7 @@ type NewsData = {
 };
 
 //fetching the data
-function fetchData(
-  url: string,
-  callback: (error: Error | null, data?: string) => void,
+function fetchData(url: string,callback: (error: Error | null, data?: string) => void,
 ): void {
   https
     .get(url, (response) => {

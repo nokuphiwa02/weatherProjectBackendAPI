@@ -8,7 +8,7 @@
     "dev": "tsx src/index.ts",
     "Async": "tsx src/AsyncVersion.ts",
     "Callback": "tsx src/CallbackVerison.ts",
-    "PromiseVersion": "tsx src/PromiseVersion.ts"
+    "Promise": "tsx src/PromiseVersion.ts"
   },
   "repository": {
     "type": "git",
