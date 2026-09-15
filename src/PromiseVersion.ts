@@ -59,3 +59,10 @@ function displayWeather(weather: WeatherData): void {
   console.log("Temperature:", w.temperature, "°C");
   console.log("Wind Speed:", w.windspeed, "km/h");
 }
+//display news
+function displayNews(news: NewsData): void {
+  console.log("news");
+  news!.posts.forEach((post, i) => {
+    console.log(`${i + 1}. ${post.title}`);
+  });
+}
