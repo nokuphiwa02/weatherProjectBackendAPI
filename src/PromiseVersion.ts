@@ -35,3 +35,11 @@ function fetchData(url: string): Promise<string> {
       });
   });
 }
+//Fectch the current weather
+function fetchWeather(): Promise<WeatherData> {
+  const weatherUrl =
+    "https://api.open-meteo.com/v1/forecast?latitude=-29.6168&longitude=30.3928&current_weather=true";
+  return fetchData(weatherUrl).then((data) => {
+    return JSON.parse(data) as WeatherData;
+  });
+}
