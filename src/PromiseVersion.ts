@@ -81,8 +81,8 @@ fetchWeather()
   });
 
 // promise.all
-   console.log("promise all");
-   Promise.all([fetchWeather(), fetchNews()])
+console.log("promise all");
+Promise.all([fetchWeather(), fetchNews()])
   .then(([weather, news]) => {
     displayWeather(weather);
     displayNews(news);
@@ -91,3 +91,14 @@ fetchWeather()
   .catch((error) => {
     console.error("Error:", error.message);
   });
+
+//Promise race
+console.log("promise race");
+Promise.race([fetchWeather(), fetchNews()])
+  .then((result) => {
+    console.log(JSON.stringify(result, null, 2).slice(0, 200));
+  })
+  .catch((error) => {
+    console.error("Error:", error.message);
+  });
+
