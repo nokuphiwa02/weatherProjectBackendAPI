@@ -51,3 +51,11 @@ function fetchNews(): Promise<NewsData> {
     return JSON.parse(data) as NewsData;
   });
 }
+
+//display weather
+function displayWeather(weather: WeatherData): void {
+  const w = weather!.current_weather;
+  console.log("weather");
+  console.log("Temperature:", w.temperature, "°C");
+  console.log("Wind Speed:", w.windspeed, "km/h");
+}
