@@ -66,3 +66,16 @@ function displayNews(news: NewsData): void {
     console.log(`${i + 1}. ${post.title}`);
   });
 }
+//promise chain
+console.log("chain");
+fetchWeather()
+  .then((weather) => {
+    displayWeather(weather);
+    return fetchNews();
+  })
+  .then((news) => {
+    displayNews(news);
+  })
+  .catch((error) => {
+    console.error("Error:", error.message);
+  });
