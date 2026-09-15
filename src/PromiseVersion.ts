@@ -43,3 +43,11 @@ function fetchWeather(): Promise<WeatherData> {
     return JSON.parse(data) as WeatherData;
   });
 }
+
+//Fetch the news
+function fetchNews(): Promise<NewsData> {
+  const newsUrl = "https://dummyjson.com/posts?limit=5";
+  return fetchData(newsUrl).then((data) => {
+    return JSON.parse(data) as NewsData;
+  });
+}
